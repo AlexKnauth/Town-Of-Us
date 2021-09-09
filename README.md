@@ -17,6 +17,7 @@ An Among Us mod that adds a bunch of roles, modifiers and game settings
 - [Sheriff](#sheriff)
 - [Engineer](#engineer)
 - [Swapper](#swapper)
+- [Vote-Bouncer](#vote-bouncer)
 - [Investigator](#investigator)
 - [Time Lord](#time-lord)
 - [Medic](#medic)
@@ -395,6 +396,19 @@ All the votes for the first player will instead be counted towards the second pl
 | Name | Description | Type | Default |
 |----------|:-------------:|:------:|:------:|
 | Swapper | The percentage probability of the Swapper appearing | Percentage | 0% |
+
+-----------------------
+## Vote-Bouncer
+### **Team: Crewmates**
+In a meeting, the Vote-Bouncer can choose one player other than themselves to "shield" from votes. Each single vote cast against that player gets bounced back to the player who cast it. 
+
+Example: if Alice is the Vote-Bouncer, she chooses to shield Bob, and Charlie and David choose to vote Bob, then it will appear to everyone that Charlie and David each voted for themselves.
+
+### Game Options
+| Name                    | Description                                              | Type           | Default |
+|-------------------------|:--------------------------------------------------------:|:--------------:|:-------:|
+| Vote-Bouncer            | The percentage probability of the Vote-Bouncer appearing | Percentage     | 0%      |
+| Vote-Bouncer Shield Per | Whether they can shield once per Meeting or per Game     | Meeting / Game | Meeting |
 
 -----------------------
 ## Investigator

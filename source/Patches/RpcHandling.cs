@@ -253,6 +253,11 @@ namespace TownOfUs
                         new Swapper(Utils.PlayerById(readByte));
                         break;
 
+                    case CustomRPC.SetVoteBouncer:
+                        readByte = reader.ReadByte();
+                        new VoteBouncer(Utils.PlayerById(readByte));
+                        break;
+
                     case CustomRPC.SetShifter:
                         readByte = reader.ReadByte();
                         new Shifter(Utils.PlayerById(readByte));
@@ -734,6 +739,9 @@ namespace TownOfUs
 
                 if (Check(CustomGameOptions.SwapperOn))
                     CrewmateRoles.Add((typeof(Swapper), CustomRPC.SetSwapper, CustomGameOptions.SwapperOn));
+
+                if (Check(CustomGameOptions.VoteBouncerOn))
+                    CrewmateRoles.Add((typeof(VoteBouncer), CustomRPC.SetVoteBouncer, CustomGameOptions.VoteBouncerOn));
 
                 if (Check(CustomGameOptions.InvestigatorOn))
                     CrewmateRoles.Add((typeof(Investigator), CustomRPC.SetInvestigator, CustomGameOptions.InvestigatorOn));

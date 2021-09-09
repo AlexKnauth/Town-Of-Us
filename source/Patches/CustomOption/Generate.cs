@@ -10,6 +10,7 @@ namespace TownOfUs.CustomOption
         public static CustomNumberOption SheriffOn;
         public static CustomNumberOption EngineerOn;
         public static CustomNumberOption SwapperOn;
+        public static CustomNumberOption VoteBouncerOn;
         public static CustomNumberOption InvestigatorOn;
         public static CustomNumberOption TimeLordOn;
         public static CustomNumberOption MedicOn;
@@ -87,6 +88,11 @@ namespace TownOfUs.CustomOption
 
         public static CustomHeaderOption Engineer;
         public static CustomStringOption EngineerPer;
+
+        // Swapper has no extra section here
+
+        public static CustomHeaderOption VoteBouncer;
+        public static CustomStringOption VoteBouncerPer;
 
         public static CustomHeaderOption Investigator;
         public static CustomNumberOption FootprintSize;
@@ -186,6 +192,8 @@ namespace TownOfUs.CustomOption
             EngineerOn = new CustomNumberOption(true, num++, "<color=#FFA60AFF>Engineer</color>", 0f, 0f, 100f, 10f,
                 PercentFormat);
             SwapperOn = new CustomNumberOption(true, num++, "<color=#66E666FF>Swapper</color>", 0f, 0f, 100f, 10f,
+                PercentFormat);
+            VoteBouncerOn = new CustomNumberOption(true, num++, "<color=#33A633FF>Vote-Bouncer</color>", 0f, 0f, 100f, 5f,
                 PercentFormat);
             InvestigatorOn = new CustomNumberOption(true, num++, "<color=#00B3B3FF>Investigator</color>", 0f, 0f, 100f,
                 10f, PercentFormat);
@@ -309,6 +317,12 @@ namespace TownOfUs.CustomOption
             EngineerPer =
                 new CustomStringOption(num++, "Engineer Fix Per", new[] {"Round", "Game"});
 
+            // Swapper has no extra section here
+
+			VoteBouncer =
+				new CustomHeaderOption(num++, "<color=#33A633FF>Vote-Bouncer</color>");
+			VoteBouncerPer =
+				new CustomStringOption(num++, "Vote-Bouncer Fix Per", new[] {"Meeting", "Game"});
 
             Investigator =
                 new CustomHeaderOption(num++, "<color=#00B3B3FF>Investigator</color>");

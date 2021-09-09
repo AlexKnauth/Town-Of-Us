@@ -1,4 +1,5 @@
 using TownOfUs.CrewmateRoles.EngineerMod;
+using TownOfUs.CrewmateRoles.VoteBouncerMod;
 using TownOfUs.CrewmateRoles.MedicMod;
 using TownOfUs.CrewmateRoles.SeerMod;
 using TownOfUs.CustomOption;
@@ -16,6 +17,7 @@ namespace TownOfUs
         public static int JanitorOn => (int) Generate.JanitorOn.Get();
         public static int EngineerOn => (int) Generate.EngineerOn.Get();
         public static int SwapperOn => (int) Generate.SwapperOn.Get();
+        public static int VoteBouncerOn => (int) Generate.VoteBouncerOn.Get();
         public static int ShifterOn => (int) Generate.ShifterOn.Get();
         public static int InvestigatorOn => (int) Generate.InvestigatorOn.Get();
         public static int TimeLordOn => (int) Generate.TimeLordOn.Get();
@@ -104,6 +106,7 @@ namespace TownOfUs
         public static int MaxNeutralRoles => (int) Generate.MaxNeutralRoles.Get();
         public static bool RoleUnderName => Generate.RoleUnderName.Get();
         public static EngineerFixPer EngineerFixPer => (EngineerFixPer) Generate.EngineerPer.Get();
+        public static VoteBouncerFixPer VoteBouncerFixPer => (VoteBouncerFixPer) Generate.VoteBouncerPer.Get();
         public static float ReviveDuration => Generate.ReviveDuration.Get();
         public static bool AltruistTargetBody => Generate.AltruistTargetBody.Get();
         public static bool SheriffBodyReport => Generate.SheriffBodyReport.Get();

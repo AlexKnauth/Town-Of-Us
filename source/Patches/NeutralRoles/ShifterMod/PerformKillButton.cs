@@ -117,6 +117,7 @@ namespace TownOfUs.NeutralRoles.ShifterMod
                 case RoleEnum.Lover:
                 case RoleEnum.Mayor:
                 case RoleEnum.Swapper:
+                case RoleEnum.VoteBouncer:
                 case RoleEnum.Investigator:
                 case RoleEnum.TimeLord:
                 case RoleEnum.Medic:

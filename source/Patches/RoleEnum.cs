@@ -9,6 +9,7 @@ namespace TownOfUs
         Lover,
         Mayor,
         Swapper,
+        VoteBouncer,
         Investigator,
         TimeLord,
         Shifter,

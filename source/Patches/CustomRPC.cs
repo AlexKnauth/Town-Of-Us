@@ -8,6 +8,7 @@ namespace TownOfUs
         SetSheriff,
         SetEngineer,
         SetSwapper,
+        SetVoteBouncer,
         SetShifter,
         SetInvestigator,
         SetTimeLord,

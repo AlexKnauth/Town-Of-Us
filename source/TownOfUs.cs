@@ -29,6 +29,7 @@ namespace TownOfUs
         public static Sprite EngineerFix;
         public static Sprite SwapperSwitch;
         public static Sprite SwapperSwitchDisabled;
+        public static Sprite VoteBouncerShield;
         public static Sprite Shift;
         public static Sprite Footprint;
         public static Sprite Rewind;
@@ -78,6 +79,7 @@ namespace TownOfUs
             EngineerFix = CreateSprite("TownOfUs.Resources.Engineer.png");
             SwapperSwitch = CreateSprite("TownOfUs.Resources.SwapperSwitch.png");
             SwapperSwitchDisabled = CreateSprite("TownOfUs.Resources.SwapperSwitchDisabled.png");
+            VoteBouncerShield = CreateSprite("TownOfUs.Resources.Medic.png");
             Shift = CreateSprite("TownOfUs.Resources.Shift.png");
             Footprint = CreateSprite("TownOfUs.Resources.Footprint.png");
             Rewind = CreateSprite("TownOfUs.Resources.Rewind.png");
